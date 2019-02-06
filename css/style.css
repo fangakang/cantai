@@ -1,0 +1,267 @@
+﻿#app{position: relative;    overflow: hidden;}
+/*body{background: url('../assets/bg_y.jpg');background-size: cover;background-repeat: no-repeat;}*/
+.body_bg{
+	background: url('../assets/bg_y.jpg');background-size: cover;background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+.mainInner{width: 100%;position: absolute;top: 80px;bottom: 0;left: 0;right: 0;background-color: rgba(255,255,255,.2);}
+.order .menu{position: absolute;top: 0;left: 0;bottom: 15px;width: 410px;background-color: #fff; border-radius: 5px}
+.order .menu .wrap{padding: 15px 15px 4px;}
+.order .menu .hd{border-bottom:1px solid #eee;    height: 125px;position: relative;}
+.order .menu .hd .top{color: #48465b;font-size: 18px;line-height: 1;margin-bottom: 5px;margin-top: 40px;}
+.order .menu .hd .top span,.order .menu .hd p{color: #48465b;font-size: 16px;line-height: 24px;}
+.order .menu .hd .topClip{background:url(../assets/clip.png) top center no-repeat;height: 52px;width: 100%; position: absolute;    top: -12px;}
+.order .menu .hd .editIcon{    position: absolute;right: 20px;bottom: 24px;font-size: 20px;color: #48465b;cursor: pointer;}
+.order .menu .bd{position: absolute;top: 128px;bottom: 225px;left: 0;right: 0;overflow-y: auto;}
+.order .menu .bd .wrap{padding: 0 15px}
+.order .menu .bd ul li{border-bottom:1px dashed #eee;padding: 10px 0;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;}
+.order .menu .bd ul li .name{width: 48%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: inline-block;margin-right: 20px;}
+.order .menu .bd ul li .name,.menu .bd ul li .price{font-size: 18px;color: #48465b}
+.order .menu .bd ul li .ctrlBtn i{font-size: 24px;color: #fa8b2e;vertical-align: middle;cursor: pointer;}
+.order .menu .bd ul li .ctrlBtn em{vertical-align: middle;padding: 0 5px;font-size: 16px}
+.order .menu .bd ul li .grayText{color:#999;font-size: 12px}
+.order .menu .bd ul li .grayText i{font-size: 14px}
+.order .menu .bd ul li .subDish{background-color: #e9e9eb;padding: 5px 0;margin: 5px 0;display: none}
+.order .menu .bd ul li .subDish .row{line-height: 1.8}
+.order .menu .bd ul li .subDish .row p.tt{color: #999}
+.order .menu .bd ul li .name i{font-size: 12px}
+.order .menu .bd ul li .name i:before {
+    content: "\f0da";
+}
+.order .menu .bd ul li.on .name i:before {
+    content: "\f0d7";
+}
+.order .menu .bd ul li.on .subDish{display: block;}
+
+
+.order .menu .bd .wrap>.row{margin-top: 10px}
+.order .menu .bd .wrap>.row .textDesc{}
+.order .menu .bd .wrap>.row .textDesc .retreat{text-align: right;}
+.order .menu .bd .wrap>.row .textDesc .retreat em{display: inline-block;width:25px;height: 21px;border: 1px solid #f62a2a;color: #f62a2a;border-radius: 3px;text-align: center;line-height: 21px; font-size: 14px}
+.order .menu .bd .wrap>.row .textDesc .name,.order .menu .bd .wrap>.row .textDesc .time{font-size: 16px;color: #48465b}
+.order .menu .bd .wrap>.row .dishDesc h3{font-size: 24px;color: #48465b}
+.order .menu .bd .wrap>.row .dishDesc p{font-size: 16px;color: #48465b}
+.order .menu .bd .wrap>.row .btns{font-size: 20px;text-align: center;margin-top: 10px}
+.order .menu .bd .wrap>.row .btns span{width: 178px;height: 56px;line-height: 56px;background: #E8E8EA;cursor: pointer;}
+.order .menu .bd .wrap>.row .btns span.cancel{display: block;width: 100%}
+.order .menu .ft{position: absolute;left: 0;right: 0;bottom: 0;background: #fff}
+.order .menu .ft .dishNum{line-height: 40px;}
+.order .menu .ft .dishNum .mypage{line-height: 45px;}
+.order .menu .ft .delAll{color: #999;cursor: pointer; font-size: 16px;margin-bottom: 10px;width: 50px;}
+.order .menu .ft .delAll i{font-size: 16px}
+.order .menu .ft .delAll em{color: #999;font-size: 14px}
+.order .menu .ft .dishNum .nums{font-size:16px;color: #48465b}
+.order .menu .ft .remarks{background: #e9e9eb}
+.order .menu .ft .remarks .wrap{padding: 5px;font-size: 18px;color: #999}
+.order .menu .ft .remarks .wrap p{word-wrap: break-word;height: 70px;overflow: hidden;}
+.order .menu .ft .remarks textarea{border: 0;height: 50px;resize: none;background: #e9e9eb;width: 100%;font-size: 14px;}
+.order .menu .ft  .total span{font-size: 36px;color: #fa8b2e}
+.order .menu .ft  .total span em{font-size: 24px;color: #48465b}
+.order .menu .ft .dishNum .page{color: #cfcfcf;font-size: 30px;cursor: pointer;}
+.order .leftft{position: absolute;bottom:5px;left: 0;width: 410px}
+.order .leftft span{width: 175px;height: 50px;line-height: 50px;text-align: center;font-size: 20px;color: #535369;background: #dbdbdb;cursor: pointer;
+border-radius: 0 0 3px 3px}
+.order .leftft span i{font-size: 28px;color:#535369 }
+.order .rightMain{position: absolute;top: 0;left: 430px;right: 0;bottom: 0;background: none}
+.order .rightMain .searchInput{margin-top: 30px;}
+.order .rightMain .searchInput .searchInputWrap{border:1px solid #fff;}
+.order .rightMain .searchInput .icon{width: 32px;height: 32px;line-height: 34px;text-align: center;background-color: #fff}
+.order .rightMain .searchInput .icon i{font-size: 20px;color: #999}
+.order .rightMain .searchInput input{border:0;height: 32px;line-height: 32px;width: 150px;font-size: 16px}
+.order .rightMain .navs ul li{float: left;height: 74px;text-align: center;line-height: 74px;font-size: 22px;color: #fff;padding: 0 10px;cursor: pointer;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0}
+.order .rightMain .navs ul li.on{background: #fa8b2e}
+.order .rightMain  .ft{position: absolute;bottom: 15px;left: 0;right: 0}
+.order .rightMain  .ft .btns{    margin-left: 15%;}
+.order .rightMain  .ft .btns span{width: 175px;height: 82px;line-height: 82px;text-align: center;font-size: 26px;color: #535369;background: #dbdbdb;cursor: pointer;display: block;float: left;margin-right: 15px}
+.order .rightMain  .ft .page{font-size: 18px;color: #fff}
+.order .rightMain  .ft .pageArrow{font-size: 40px;cursor: pointer;color: #fff}
+.order .rightMain  .ft .pageArrow i{margin-left: 15px}
+.order .rightMain  .bd{position: absolute;top: 100px;left: 0;right: 0;bottom: 115px;}
+.order .rightMain  .bd ul{margin-top: -14px}
+.order .rightMain  .bd ul li{float: left;cursor: pointer;margin-top: 14px;}
+.order .rightMain  .bd ul li .liwrap{margin-right: 14px;}
+.order .rightMain  .bd ul li .h3{font-size: 22px;color: #48465b;background: rgba(255,255,255,.59);width: 100%;border-top-right-radius: 5px;border-top-left-radius: 5px;height: 98px;}
+.order .rightMain .bd ul li .p{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;height: 50px;line-height: 50px;background: rgba(255,255,255,.35);font-size: 22px;color: #fff;text-align: right;}
+.order .rightMain  .bd ul li .h3 div.text{text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;height: 60px;padding-top: 7px;/* eslint-disable-next-line*//* autoprefixer: off */-webkit-box-orient: vertical;}
+.order .rightMain  .bd ul li .h3>div{padding: 0 5px;}
+.order .rightMain  .bd ul li .p .wrap{padding: 0 5px}
+.order .rightMain  .bd ul li .p .wrap span{color:#fa8b2e;}
+.order .rightMain  .bd ul li.on .p{background: rgba(83,83,105,.44);}
+.order .rightMain  .bd ul li.on .p span{color: #fd8b19}
+.order .rightMain  .bd ul li.on .h3{background: rgba(209,204,202,.59);}
+
+.dalog{position: fixed;top: 20%;left: 50%;margin-left: -250px;width: 500px;background-color:#fff;z-index: 21;text-align: center;border-radius: 8px}
+.dalog .wrap{padding: 10px 28px}
+.dalog .hd{font-size: 24px;color: #333;border-bottom: 1px solid #eee;padding: 15px 0;margin-bottom: 10px}
+.dalog .bd{ padding: 15px 0;}
+.dalog .bd .row{margin-top: 15px}
+.dalog .bd span.tit{float: left;font-size: 18px;height: 40px;line-height: 40px}
+.dalog .bd input{height: 40px;line-height: 40px;text-align: center;width: 250px;border: 1px solid #eee;margin: 0 10px;font-size: 16px;}
+.dalog .bd .fa{font-size: 30px;vertical-align: middle;color: #ED881D;cursor: pointer;}
+.dalog .bd .attrs{margin-left: -15px}
+/*  .dalog .bd em{display: inline-block;width: 100px;height: 30px;border: 1px solid #eee;line-height: 30px;float: left;margin-left: 15px;margin-bottom: 15px;cursor: pointer;}
+*/  .dalog .ft{padding: 20px 0; width: 440px; margin:0 auto}
+.dalog .ft span{width: 200px;height: 50px;color: #fff;line-height: 50px;font-size: 18px;cursor: pointer; border-radius: 3px}
+.dalog .ft span.cancel{background: #CBCBCB;color: #fff}
+.dalog .ft span.sure{background: #ED881D;color: #fff}
+.tableList::-webkit-scrollbar,.order .menu .bd::-webkit-scrollbar,.order .rightMain .bd::-webkit-scrollbar,.menu .bd .lists::-webkit-scrollbar,.changeTable .tableContent::-webkit-scrollbar,.changeTable .modalLeft::-webkit-scrollbar {width: 10px;height: 10px;border-radius: 10px;background-color: #F5F5F5;}
+/*定义滚动条轨道 内阴影+圆角*/
+.tableList::-webkit-scrollbar-track,.order .menu .bd::-webkit-scrollbar-track,.order .rightMain .bd::-webkit-scrollbar-track,.menu .bd .lists::-webkit-scrollbar-track,.changeTable .tableContent::-webkit-scrollbar-track,.changeTable .modalLeft::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);border-radius: 10px;background-color: #F5F5F5;display: none;}
+/*定义滑块 内阴影+圆角*/
+.tableList::-webkit-scrollbar-thumb,.order .menu .bd::-webkit-scrollbar-thumb,.order .rightMain .bd::-webkit-scrollbar-thumb,.menu .bd .lists::-webkit-scrollbar-thumb,.changeTable .tableContent::-webkit-scrollbar-thumb,.changeTable .modalLeft::-webkit-scrollbar-thumb{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: #e5e5e5;}
+.order .menu .bd ul li{padding: 12px 6px}
+.order .rightMain .bd{overflow-y: auto;}
+.order .rightMain .ft .btns span{ border-radius: 3px}
+.order .rightMain .ft .btns span.cancel{background: #f7931a;color: #fff;}
+.order .rightMain .ft .btns span.order{background: #68bf16;color: #fff; border-radius: 3px}
+.opacity{opacity: .6;}
+.navs .moreNavs{position: absolute;right: 0px;top: 74px;background-color: #fff;z-index: 2;padding-bottom: 15px;display: block;left: 0;z-index:11;display: none;}
+.order .rightMain .navs ul li .moreNavs li{background: #ececee;color: #333;width:18.5%;margin-left: 1.3%;margin-top: 15px;height: 50px;line-height: 50px;
+border-radius: 3px;}
+.order .rightMain .navs ul li .moreNavs li:hover{background-color: #f7892d;color: #fff}
+.order .rightMain .navs ul li .moreNavs li.on{background-color: #f7892d;color: #fff}
+.navs .maskbg{background: rgba(0,0,0,.3);position: fixed;top: 164px;right: 0;bottom: 0;z-index:10;display: none;}
+.navs .moreNavs span.on{background-color: #f7892d;color: #fff}
+.navs .span:hover,.navs .span.on{background-color: #f7892d;color: #fff}
+.navs .span.more:hover .moreNavs,.navs .span.more:hover~.maskbg{display: block;}
+.order .rightMain .ft .pageArrow i.opacity{opacity: .4;}
+.order .rightMain .ft .fr{height: 82px;line-height: 82px;position: relative;right: 5px;}
+.order .rightMain .bd ul li .p .wrap span{color: #A5472D;}
+.order .rightMain .bd ul li.on .p .wrap span{color: #f7892d;}
+@media screen and (max-width: 1600px){
+	.order .rightMain .bd ul li .h3{font-size: 20px;}
+	.order .rightMain .bd ul li .h3 div.text{height: 50px;font-size: 18px;}
+	.order .rightMain .bd ul li .h3{height: 94px;}
+	.order .rightMain .bd ul li .h3 div.text{ text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+	.order .rightMain .bd ul li .p{height: 40px;line-height: 40px;}
+	.order .rightMain .bd ul li .p .wrap span{font-size: 18px;}
+	.order .menu .hd{height: 122px;}
+	.order .rightMain .navs ul li .moreNavs li{font-size: 24px;}
+	.order .rightMain .bd ul li .p .wrap{font-size: 18px;}
+	.order .rightMain .bd ul li .p .wrap span{font-size: 18px;}
+	.order .menu .ft .remarks .wrap{font-size: 16px;}
+
+}
+@media screen and (max-width:1450px){
+	.menu .bd ul li .price, .order .menu .bd ul li .name{font-size: 16px;}
+}
+@media screen and (max-width: 1400px){
+	.order .rightMain .ft .pageArrow{font-size: 34px;}
+	.order .menu .ft .remarks .wrap{font-size: 14px;}
+}
+@media screen and (max-width: 1366px){
+	.order .menu .hd p{line-height: 1.5;font-size: 14px;}
+	.order .rightMain .navs ul li{font-size: 20px;}
+	.order .rightMain .bd ul li .h3{font-size: 18px;}
+	.order .rightMain .bd ul li .h3 div.text{height: 50px;}
+	.menu .bd .lists .row span{font-size: 18px;}
+	.menu .bd .top span{font-size: 18px;}
+	.order .rightMain .bd ul li .h3{height: 72px;}
+	.order .menu{width: 350px}
+	.order .menu .hd .top span{font-size: 14px}
+	.order .menu .bd ul li .name, .menu .bd ul li .price{font-size: 16px}
+	.order .menu .bd ul li .ctrlBtn i{font-size: 16px}
+	.order .menu .bd ul li .ctrlBtn em{font-size: 14px}
+	.order .menu .bd .wrap>.row .btns span{width: 150px;}
+	.order .leftft{width: 350px;}
+	.order .leftft span{width: 165px;}
+	.order .rightMain{left: 370px}
+	.order .rightMain .bd ul li .p{line-height: 30px;height: 30px;font-size: 16px;}
+	.menu .hd h3{font-size: 24px;}
+	.order .rightMain .bd ul li .p .wrap span{font-size: 18px;}
+	.order .menu .bd ul li{padding: 6px 10px;}
+	.order .menu .hd{height:115px;}
+	.order .rightMain .navs ul li .moreNavs li{font-size: 18px;height: 40px;line-height: 40px;}
+	.order .rightMain .ft .btns span,.order .rightMain .ft .fr{height: 62px;line-height: 62px;}
+	.order .rightMain .navs ul li{height: 60px;line-height: 60px;}
+	.order .rightMain .bd{top:80px;}
+	.navs .moreNavs{top: 60px;}
+}
+@media screen and (max-width: 1280px) {
+.mainInner{top: 60px;}
+.order .menu .ft .dishNum .nums,.order .menu .ft .dishNum .delAll{font-size: 14px}
+.order .menu .ft .dishNum .page{font-size: 24px}
+.order .menu .bd{bottom: 186px}
+.order .menu .wrap{padding: 10px}
+.order .menu .ft .total span{font-size: 24px}
+.order .menu .bd ul li .name, .menu .bd ul li .price{font-size: 16px}
+.order .menu .bd ul li .ctrlBtn i{font-size: 16px}
+.order .menu .bd ul li .ctrlBtn em{font-size: 14px}
+.order .rightMain .bd ul li .h3{height: 66px;}
+.order .menu .bd .wrap>.row .dishDesc h3{font-size: 22px;}
+.order .rightMain .navs ul li{font-size: 18px;}
+.order .rightMain .bd ul li .h3{font-size: 16px;}
+.order .rightMain .bd ul li .h3 div.text{height: 44px;font-size: 16px;}
+.menu .hd h3{font-size: 22px;}
+.order .menu .bd ul li{padding: 6px 10px;}
+.order .rightMain .navs ul li .moreNavs li{font-size: 14px;height: 40px;line-height: 40px;}
+.order .rightMain .ft .btns{margin-left: 0;}
+.order .rightMain .ft .btns span{height: 50px;line-height: 50px;width: 160px;font-size: 24px;}
+.order .rightMain .ft .fr{height: 50px;line-height: 50px;}
+.order .rightMain .bd ul li .p .wrap,.order .rightMain .bd ul li .p .wrap span{font-size: 16px;}
+}
+@media screen and (max-width:1180px){
+.order .rightMain .ft .btns span{width: 120px;font-size: 20px;}
+.order .rightMain .bd ul li .p .wrap,.order .rightMain .bd ul li .p .wrap span{font-size: 14px;}
+}
+
+@media screen and (max-width: 1080px) {
+.mainInner{top: 60px;}
+.order .menu{width: 280px}
+.order .menu .hd{height: 100px;}
+.order .menu .hd .top span,.order .menu .hd p{font-size: 12px}
+.order .menu .ft .dishNum .nums,.order .menu .ft .dishNum .delAll{font-size: 14px}
+.order .menu .ft .dishNum .page{font-size: 24px}
+.order .menu .bd{bottom: 186px;top: 104px;}
+.order .menu .wrap{padding: 10px}
+.order .menu .ft .total span{font-size: 24px}
+.order .rightMain{left: 300px}
+.order .leftft{width: 280px;}
+.order .leftft span{width: 130px;}
+.order .menu .bd .wrap>.row .btns span{width: 116px;}
+.order .menu .bd .wrap>.row .dishDesc h3{font-size: 16px;}
+.modalFooter div{width: 170px;}
+.giftCard .clearBtn{right: 10px;}
+.order .rightMain .bd ul li .h3{font-size: 16px;height: 66px;}
+.order .rightMain .bd ul li .h3 div.text{height: 40px;font-size: 14px;}
+.order .rightMain .navs ul li{font-size: 16px;}
+.menu .hd h3{font-size: 18px;}
+.order .rightMain .bd{bottom: 80px;}
+.order .rightMain .bd ul li .p .wrap span{font-size: 16px;}
+.order .rightMain .ft .btns{margin-left: 0;}
+.order .rightMain .ft .pageArrow{font-size: 28px;}
+.order .menu .bd ul li .name{width: 38%;}
+.menu .bd ul li .price, .order .menu .bd ul li .ctrlBtn i, .order .menu .bd ul li .name{font-size: 14px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
